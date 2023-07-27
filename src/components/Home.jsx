@@ -4,7 +4,7 @@ function Home() {
   return (
     <>
       <div className="flex text-white h-full bg-white-100">
-        <div className="4/6  sm:w-1/2 ">
+        <div className="4/6  sm:w-1/2  md:my-0 mt-7 ">
           <div className=" ml-4 md:ml-12 lg:ml-16 xl:ml-20 mt-24 md:mt-36 lg:mt-36 xl:mt-36 ">
             <p className=" text-3xl md:text-4xl lg:text-6xl xl:text-8xl text-orange-500  font-custom ">
               Jestoni D. Brion
@@ -25,7 +25,7 @@ function Home() {
         </div>
 
         <div className="w-2/6 sm:w-1/2">
-          <div className="mx-auto my-20 flex justify-center">
+          <div className="mx-auto mt-20 flex justify-center">
             <img
               src="./profile2.png"
               alt="My Profile Image"
