@@ -67,25 +67,25 @@ const App = () => {
     setItemOffset(newOffset);
   };
   return (
-    <div className="w-5/6 mx-auto text-white p-3 md:my-24 my-10">
+    <div className="w-5/6 mx-auto text-white p-3 md:mt-24 mt-10">
       <p className="text-center text-2xl md:text-3xl lg:text-4xl xl:text-6xl mb-10 text-green-500">
         <strong>Projects</strong>
       </p>
       <div className="flex gap-24">
         {currentItems.map((item) => (
-          <div className="hover:bg-slate-600">
+          <div className="hover:bg-slate-600 ">
             <a href={item.url}>
               <img
                 src={item.img}
                 alt=""
-                className="w-28 sm:w-20 md:w-24 lg:w-32 xl:w-80 h-10 sm:h-16 md:h-20 lg:h-28 xl:h-60  image-fluid"
+                className="w-36 sm:w-32 md:w-24 lg:w-32 xl:w-80 h-16 sm:h-16 md:h-20 lg:h-28 xl:h-60 image-fluid"
               />
               <p className="text-sm md:text-xl lg:text-2xl xl:text-3xl mb-5 font-bold text-red-500">
                 {item.title}
               </p>
-              <p className="grid grid-cols-3">
+              <p className="md:grid grid-cols-3 hidden">
                 {item.stak.map((staks) => (
-                  <span className="text-blue-600">#{staks}</span>
+                  <span className="text-blue-600 ">#{staks}</span>
                 ))}
               </p>
             </a>

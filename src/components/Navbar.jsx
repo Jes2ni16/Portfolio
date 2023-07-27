@@ -32,16 +32,44 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex space-x-4 text-purple-500 text-xl pr-5">
-            <NavLink to="/about">About</NavLink>
-            <NavLink to="/contact">Contact</NavLink>
+            <NavLink
+              to="/about"
+              className={({ isActive, isPending }) =>
+                isPending ? "text-white" : isActive ? "text-purple-700" : ""
+              }
+            >
+              About
+            </NavLink>
+            <NavLink
+              to="/contact"
+              className={({ isActive, isPending }) =>
+                isPending ? "text-white" : isActive ? "text-purple-700" : ""
+              }
+            >
+              Contact
+            </NavLink>
           </div>
 
           {/* Mobile Menu */}
           {isMobileMenuOpen && (
             <div className="block">
               <div className="px-2 pt-2 pb-4 space-y-4 text-purple-500 text-xl pr-5 flex flex-col">
-                <NavLink to="/about">About</NavLink>
-                <NavLink to="/contact">Contact</NavLink>
+                <NavLink
+                  to="/about"
+                  className={({ isActive, isPending }) =>
+                    isPending ? "text-white" : isActive ? "text-purple-700" : ""
+                  }
+                >
+                  About
+                </NavLink>
+                <NavLink
+                  to="/contact"
+                  className={({ isActive, isPending }) =>
+                    isPending ? "text-white" : isActive ? "text-purple-700" : ""
+                  }
+                >
+                  Contact
+                </NavLink>
               </div>
             </div>
           )}
