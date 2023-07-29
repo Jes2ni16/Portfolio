@@ -58,7 +58,7 @@ function Skills() {
                 alt={skill.alt}
                 className="w-16 sm:w-20 md:w-24 lg:w-32 xl:w-40 h-10 sm:h-16 md:h-20 lg:h-28 xl:h-32  image-fluid"
               />
-              <p className="text-blue-600 text-lg">
+              <p className="text-blue-600 text-xl">
                 {" "}
                 <strong>{skill.name} </strong>{" "}
               </p>
