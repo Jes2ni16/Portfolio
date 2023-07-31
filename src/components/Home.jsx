@@ -3,9 +3,9 @@ import React from "react";
 function Home() {
   return (
     <>
-      <div className="flex text-white h-full bg-white-100">
-        <div className="4/6  sm:w-1/2  my-7 ">
-          <div className=" ml-4 md:ml-12 lg:ml-16 xl:ml-20 mt-24 md:mt-36 lg:mt-36 xl:mt-36 ">
+      <div className="flex text-white h-full bg-white-100 my-12">
+        <div className="4/6  sm:w-1/2   ">
+          <div className=" ml-4 md:ml-12 lg:ml-16 xl:ml-20 mt-24 md:mt-36 lg:mt-36 xl:mt-32 ">
             <p className=" text-3xl md:text-4xl lg:text-6xl xl:text-8xl text-orange-500  font-custom ">
               Jestoni D. Brion
             </p>
