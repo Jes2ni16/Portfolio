@@ -1,7 +1,13 @@
 import React from "react";
 import { useState } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function Skills() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   const [showAll, setShowAll] = useState(false);
 
   // Example array of objects representing images
@@ -36,8 +42,15 @@ function Skills() {
       <div className="w-5/6 mx-auto grid grid-cols-3   text-white">
         {!showAll && (
           <>
-            {allSkills.slice(0, 6).map((skill) => (
-              <div className="mx-auto my-3" key={skill.name}>
+            {allSkills.slice(0, 6).map((skill, index) => (
+              <div
+                className="mx-auto my-3"
+                key={skill.name}
+                data-aos="fade-down"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="400"
+                data-aos-delay={index * 10}
+              >
                 <img
                   src={skill.url}
                   alt={skill.alt}
