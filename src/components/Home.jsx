@@ -15,21 +15,18 @@ function Home() {
           <div className=" ml-4 md:ml-12 lg:ml-16 xl:ml-20 mt-24 md:mt-36 lg:mt-36 xl:mt-32 ">
             <p className=" text-3xl md:text-4xl lg:text-6xl xl:text-8xl text-orange-500  font-custom ">
               <Typewriter
-                options={{
-                  strings: ["Jestoni Brion"],
-                  autoStart: true,
-                  loop: true,
-                  pauseFor: 5000,
+                onInit={(typewriter) => {
+                  typewriter.typeString("Jestoni Brion").start().pauseFor(2500);
                 }}
               />
             </p>
-            <p className=" text-xl md:text-2xl lg:text-4xl xl:text-5xl mt-5 mx-5 text-green-500">
+            <p className=" text-xl md:text-2xl lg:text-4xl xl:text-5xl mt-5 mx-5 ">
               <Typewriter
-                onInit={(typewriter) => {
-                  typewriter
-                    .typeString("Full-Stack Web Developer")
-                    .start()
-                    .pauseFor(2500);
+                options={{
+                  strings: ["Full-Stack Web Developer"],
+                  autoStart: true,
+                  loop: true,
+                  pauseFor: 3000,
                 }}
               />
             </p>

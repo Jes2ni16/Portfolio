@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className=" px-8 py-4 w-screen fixed ">
+    <nav className=" px-8 py-4 w-screen fixed text-purple-500">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white font-bold text-xl">
           <NavLink to="/">
@@ -31,11 +31,11 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden lg:flex space-x-4 text-purple-500 text-xl pr-5">
+          <div className="hidden lg:flex space-x-4 text-xl pr-5">
             <NavLink
               to="/about"
               className={({ isActive, isPending }) =>
-                isPending ? "text-white" : isActive ? "text-purple-700" : ""
+                isPending ? "text-white" : isActive ? "text-purple-600" : ""
               }
             >
               About
@@ -43,7 +43,7 @@ const Navbar = () => {
             <NavLink
               to="/contact"
               className={({ isActive, isPending }) =>
-                isPending ? "text-white" : isActive ? "text-purple-700" : ""
+                isPending ? "text-white" : isActive ? "text-purple-600" : ""
               }
             >
               Contact
@@ -53,11 +53,11 @@ const Navbar = () => {
           {/* Mobile Menu */}
           {isMobileMenuOpen && (
             <div className="block">
-              <div className="px-2 pt-2 pb-4 space-y-4 text-purple-500 text-xl pr-5 flex flex-col">
+              <div className="px-2 pt-2 pb-4 space-y-4 text-xl pr-5 flex flex-col">
                 <NavLink
                   to="/about"
                   className={({ isActive, isPending }) =>
-                    isPending ? "text-white" : isActive ? "text-purple-700" : ""
+                    isPending ? "text-white" : isActive ? "text-purple-600" : ""
                   }
                 >
                   About
@@ -65,7 +65,7 @@ const Navbar = () => {
                 <NavLink
                   to="/contact"
                   className={({ isActive, isPending }) =>
-                    isPending ? "text-white" : isActive ? "text-purple-700" : ""
+                    isPending ? "text-white" : isActive ? "text-purple-600" : ""
                   }
                 >
                   Contact

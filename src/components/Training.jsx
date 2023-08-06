@@ -11,7 +11,7 @@ function Training() {
     <div className="text-white md:my-24 my-10">
       <div>
         <p
-          className="text-center text-2xl md:text-3xl lg:text-4xl xl:text-6xl mb-5 text-green-500"
+          className="text-center text-2xl md:text-3xl lg:text-4xl xl:text-6xl mb-5 text-orange-600 "
           data-aos="zoom-in"
           data-aos-offset="200"
           data-aos-easing="ease-in-sine"

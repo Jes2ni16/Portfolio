@@ -17,7 +17,7 @@ const items = [
     title: "Mini Project 2",
     img: "./mini2.PNG",
     alt: "Mini PRoject 2 img",
-    url: "https://moviemania-rosanno.vercel.app/",
+    url: "https://movie-mania-16.vercel.app/",
     stak: ["Html", "Tailwind", "React", "Redux"],
   },
   {
@@ -68,7 +68,7 @@ const App = () => {
   };
   return (
     <div className="w-5/6 mx-auto text-white p-3 md:mt-24 mt-10">
-      <p className="text-center text-2xl md:text-3xl lg:text-4xl xl:text-6xl mb-10 text-green-500">
+      <p className="text-center text-2xl md:text-3xl lg:text-4xl xl:text-6xl mb-10 text-orange-600">
         <strong>Projects</strong>
       </p>
       <div className="flex gap-24">
@@ -80,12 +80,12 @@ const App = () => {
                 alt=""
                 className="w-36 sm:w-32 md:w-24 lg:w-32 xl:w-80 h-16 sm:h-16 md:h-20 lg:h-28 xl:h-60 image-fluid"
               />
-              <p className="text-sm md:text-xl lg:text-2xl xl:text-3xl mb-5 font-bold text-red-500">
+              <p className="text-sm md:text-xl lg:text-2xl xl:text-3xl mb-5 font-bold text-orange-600">
                 {item.title}
               </p>
               <p className="md:grid grid-cols-3 hidden">
                 {item.stak.map((staks) => (
-                  <span className="text-blue-600 ">#{staks}</span>
+                  <span className=" ">#{staks}</span>
                 ))}
               </p>
             </a>
