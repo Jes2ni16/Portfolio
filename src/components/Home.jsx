@@ -14,11 +14,7 @@ function Home() {
         <div className="4/6  sm:w-1/2   ">
           <div className=" ml-4 md:ml-12 lg:ml-16 xl:ml-20 mt-24 md:mt-36 lg:mt-36 xl:mt-32 ">
             <p className=" text-3xl md:text-4xl lg:text-6xl xl:text-8xl text-orange-500  font-custom ">
-              <Typewriter
-                onInit={(typewriter) => {
-                  typewriter.typeString("Jestoni Brion").start().pauseFor(2500);
-                }}
-              />
+              Jestoni Brion
             </p>
             <p className=" text-xl md:text-2xl lg:text-4xl xl:text-5xl mt-5 mx-5 ">
               <Typewriter
@@ -45,7 +41,7 @@ function Home() {
         <div className="w-2/6 sm:w-1/2">
           <div
             className="mx-auto mt-20 flex justify-center"
-            data-aos="fade-left"
+            data-aos="fade-down"
             data-aos-offset="200"
             data-aos-easing="ease-in-sine"
             data-aos-duration="600"

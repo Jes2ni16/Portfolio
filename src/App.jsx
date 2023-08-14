@@ -3,8 +3,16 @@ import HomeLayout from "./components/HomeLayout";
 import Contact from "./components/view/Contact";
 import About from "./components/view/About";
 import Layout from "./components/view/Layout";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  AOS.init({
+    offset: 200,
+    duration: 600,
+    easing: "ease-in-sine",
+    delay: 100,
+  });
   return (
     <>
       <BrowserRouter>

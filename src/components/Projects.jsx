@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import ReactPaginate from "react-paginate";
+import "aos/dist/aos.css";
 
 const items = [
   {
@@ -18,7 +19,7 @@ const items = [
     img: "./mini2.PNG",
     alt: "Mini PRoject 2 img",
     url: "https://movie-mania-16.vercel.app/",
-    stak: ["Html", "Tailwind", "React", "Redux"],
+    stak: ["Tailwind Css", "ReactJs", "Redux", "JavaScript"],
   },
   {
     id: 3,
@@ -48,8 +49,24 @@ const items = [
     title: "todo-lis App",
     img: "./todo-list.PNG",
     alt: "Todo-List App Img",
-    url: "/",
-    stak: ["Bootstrap", "React"],
+    url: "https://todo-list-six-rust.vercel.app/",
+    stak: ["Bootstrap", "ReactJs", "JavaScript"],
+  },
+  {
+    id: 6,
+    title: "quiz-app",
+    img: "./quizApp.PNG",
+    alt: "quiz app image",
+    url: "https://quiz-app-peach-seven.vercel.app/",
+    stak: ["Css", "ReactJs", "JavaScript"],
+  },
+  {
+    id: 7,
+    title: "tic-tac-toe",
+    img: "./tic-tac-toe.PNG",
+    alt: "tic-tac-toe game image",
+    url: "https://tic-tac-toe-wheat-one.vercel.app/",
+    stak: ["Tailwind Css", "ReactJs", "JavaScript"],
   },
 ];
 
@@ -65,15 +82,24 @@ const App = () => {
     const newOffset = (event.selected * itemsPerPage) % items.length;
 
     setItemOffset(newOffset);
+    setTimeout(() => {
+      Aos.refresh();
+    }, 100);
   };
   return (
     <div className="w-5/6 mx-auto text-white p-3 md:mt-24 mt-10">
-      <p className="text-center text-2xl md:text-3xl lg:text-4xl xl:text-6xl mb-10 text-orange-600">
+      <p className="text-center text-2xl md:text-3xl lg:text- 4xl xl:text-6xl mb-10 text-orange-600">
         <strong>Projects</strong>
       </p>
-      <div className="flex gap-24">
-        {currentItems.map((item) => (
-          <div className="hover:bg-slate-600 ">
+      <div className="flex gap-24 justify-center">
+        {currentItems.map((item, index) => (
+          <div
+            className="hover:bg-slate-600 "
+            data-aos="fade-down"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="400"
+            data-aos-delay={index * 100}
+          >
             <a href={item.url}>
               <img
                 src={item.img}
@@ -100,10 +126,10 @@ const App = () => {
         pageCount={pageCount}
         previousLabel="< previous"
         renderOnZeroPageCount={null}
-        pageLinkClassName="text-purple-700 hover:text-white border border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900"
+        pageLinkClassName="text-orange-700 hover:text-white border border-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-orange-400 dark:text-orange-400 dark:hover:text-white dark:hover:bg-orange-500 dark:focus:ring-orange-900"
         containerClassName="flex gap-4 justify-center md:my-16 my-5"
-        previousClassName="text-purple-700 hover:text-white border-2 border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900"
-        nextClassName="text-purple-700 hover:text-white border-2 border-purple-700 hover:bg-purple-800 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-purple-400 dark:text-purple-400 dark:hover:text-white dark:hover:bg-purple-500 dark:focus:ring-purple-900"
+        previousClassName="text-orange-700 hover:text-white border-2 border-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-orange-400 dark:text-orange-400 dark:hover:text-white dark:hover:bg-orange-500 dark:focus:ring-orange-900"
+        nextClassName="text-orange-700 hover:text-white border-2 border-orange-700 hover:bg-orange-800 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-orange-400 dark:text-orange-400 dark:hover:text-white dark:hover:bg-orange-500 dark:focus:ring-orange-900"
       />
     </div>
   );

@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className=" px-8 py-4 w-screen fixed text-purple-500">
+    <nav className=" px-8 py-4 w-screen fixed text-white">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white font-bold text-xl">
           <NavLink to="/">
@@ -35,7 +35,7 @@ const Navbar = () => {
             <NavLink
               to="/about"
               className={({ isActive, isPending }) =>
-                isPending ? "text-white" : isActive ? "text-purple-600" : ""
+                isPending ? "text-white" : isActive ? "text-gray-300" : ""
               }
             >
               About
@@ -43,7 +43,7 @@ const Navbar = () => {
             <NavLink
               to="/contact"
               className={({ isActive, isPending }) =>
-                isPending ? "text-white" : isActive ? "text-purple-600" : ""
+                isPending ? "text-white" : isActive ? "text-gray-300" : ""
               }
             >
               Contact
@@ -57,7 +57,7 @@ const Navbar = () => {
                 <NavLink
                   to="/about"
                   className={({ isActive, isPending }) =>
-                    isPending ? "text-white" : isActive ? "text-purple-600" : ""
+                    isPending ? "text-white" : isActive ? "text-gray-300" : ""
                   }
                 >
                   About
@@ -65,7 +65,7 @@ const Navbar = () => {
                 <NavLink
                   to="/contact"
                   className={({ isActive, isPending }) =>
-                    isPending ? "text-white" : isActive ? "text-purple-600" : ""
+                    isPending ? "text-white" : isActive ? "text-gray-300" : ""
                   }
                 >
                   Contact

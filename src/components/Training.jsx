@@ -10,23 +10,18 @@ function Training() {
   return (
     <div className="text-white md:my-24 my-10">
       <div>
-        <p
-          className="text-center text-2xl md:text-3xl lg:text-4xl xl:text-6xl mb-5 text-orange-600 "
-          data-aos="zoom-in"
-          data-aos-offset="200"
-          data-aos-easing="ease-in-sine"
-          data-aos-duration="600"
-        >
+        <p className="text-center text-2xl md:text-3xl lg:text-4xl xl:text-6xl mb-5 text-orange-600 ">
           <strong>Trainings</strong>
         </p>
       </div>
 
       <div
         className="w-3/4   mx-auto flex items-center rounded my-5 "
-        data-aos="slide-left"
-        data-aos-offset="400"
+        data-aos="slide-right"
+        data-aos-offset="200"
         data-aos-easing="ease-in-sine"
         data-aos-duration="400"
+        data-aos-delay="100"
       >
         <div className="w-1/6 h-11 sm:h-20 md:h-24 lg:h-28 xl:h-32  bg-white rounded">
           <img
@@ -47,6 +42,7 @@ function Training() {
         data-aos-offset="200"
         data-aos-easing="ease-in-sine"
         data-aos-duration="400"
+        data-aos-delay="200"
       >
         <div className="w-1/6 bg-white h-11 sm:h-20 md:h-24 lg:h-28 xl:h-32 rounded">
           <img
