@@ -1,6 +1,6 @@
 // App.js
 
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 import ReactPaginate from "react-paginate";
 import "aos/dist/aos.css";
 
@@ -82,39 +82,46 @@ const App = () => {
     const newOffset = (event.selected * itemsPerPage) % items.length;
 
     setItemOffset(newOffset);
-    setTimeout(() => {
-      Aos.refresh();
-    }, 100);
   };
   return (
-    <div className="w-5/6 mx-auto text-white p-3 md:mt-24 mt-10">
+    <div className="w-full text-white  md:mt-24 mt-10">
       <p className="text-center text-2xl md:text-3xl lg:text- 4xl xl:text-6xl mb-10 text-orange-600">
         <strong>Projects</strong>
       </p>
-      <div className="flex gap-24 justify-center">
+      <div className="flex gap-2 md:gap-12 xl:gap-32  justify-center">
         {currentItems.map((item, index) => (
           <div
-            className="hover:bg-slate-600 "
+            className=" p-5"
+            key={index}
             data-aos="fade-down"
             data-aos-easing="ease-in-sine"
             data-aos-duration="400"
             data-aos-delay={index * 100}
           >
-            <a href={item.url}>
-              <img
-                src={item.img}
-                alt=""
-                className="w-36 sm:w-32 md:w-24 lg:w-32 xl:w-80 h-16 sm:h-16 md:h-20 lg:h-28 xl:h-60 image-fluid"
-              />
-              <p className="text-sm md:text-xl lg:text-2xl xl:text-3xl mb-5 font-bold text-orange-600">
-                {item.title}
-              </p>
-              <p className="md:grid grid-cols-3 hidden">
-                {item.stak.map((staks) => (
-                  <span className=" ">#{staks}</span>
-                ))}
-              </p>
-            </a>
+            <div className="transition-transform transform hover:-translate-y-5 ">
+              <a
+                href={item.url}
+                className=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={item.img}
+                  alt=""
+                  className="w-36 sm:w-40 md:w-48 lg:w-64 xl:w-80 h-16 sm:h-20 md:h-32 lg:h-48 xl:h-60 image-fluid"
+                />
+                <p className="text-sm md:text-xl lg:text-2xl xl:text-3xl mb-5 font-bold text-orange-600">
+                  {item.title}
+                </p>
+                <p className="md:grid grid-cols-3 hidden">
+                  {item.stak.map((staks, index) => (
+                    <span key={index} className=" ">
+                      #{staks}
+                    </span>
+                  ))}
+                </p>
+              </a>
+            </div>
           </div>
         ))}
       </div>

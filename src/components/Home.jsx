@@ -10,13 +10,13 @@ function Home() {
   }, []);
   return (
     <>
-      <div className="flex text-white h-full bg-white-100 my-12">
-        <div className="4/6  sm:w-1/2   ">
-          <div className=" ml-4 md:ml-12 lg:ml-16 xl:ml-20 mt-24 md:mt-36 lg:mt-36 xl:mt-32 ">
-            <p className=" text-3xl md:text-4xl lg:text-6xl xl:text-8xl text-orange-500  font-custom ">
+      <div className="w-full flex text-white h-full bg-white-100 my-12">
+        <div className="w-full  md:w-4/6  ">
+          <div className=" mt-24 md:mt-36 lg:mt-36 xl:mt-32 ">
+            <p className=" text-5xl md:text-6xl lg:text-6xl xl:text-8xl text-orange-500  font-custom ">
               Jestoni Brion
             </p>
-            <p className=" text-xl md:text-2xl lg:text-4xl xl:text-5xl mt-5 mx-5 ">
+            <p className=" text-xl md:text-2xl lg:text-4xl xl:text-5xl mt-5  ">
               <Typewriter
                 options={{
                   strings: ["Full-Stack Web Developer"],
@@ -27,8 +27,8 @@ function Home() {
               />
             </p>
           </div>
-          <div className=" ml-8 md:ml-12 lg:ml-16 xl:ml-20 mt-12 md:mt-8 lg:mt-12 xl:mt-20 max-w-3xl">
-            <p className=" text-sm md:text-xl lg:text-2xl xl:text-3xl hidden sm:block font-costum">
+          <div className=" mt-12 md:mt-8 lg:mt-12 xl:mt-20 max-w-3xl">
+            <p className=" text-sm md:text-xl lg:text-2xl xl:text-3xl  font-costum">
               In this ever-connected world, I aspire to contribute to a digital
               landscape that empowers users, businesses, and communities. My
               mission is to develop web applications that not only meet the
@@ -38,7 +38,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="w-2/6 sm:w-1/2">
+        <div className="w-2/6 hidden sm:block">
           <div
             className="mx-auto mt-20 flex justify-center"
             data-aos="fade-down"

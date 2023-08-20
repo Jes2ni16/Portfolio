@@ -1,4 +1,3 @@
-import React from "react";
 import Training from "./Training";
 import Home from "./Home";
 import UserList from "./Skills";
@@ -7,7 +6,7 @@ import Projects from "./Projects";
 function HomeLayout() {
   return (
     <>
-      <div className="r">
+      <div className="md:px-16 px-4">
         <Home />
         <Training />
         <UserList />
