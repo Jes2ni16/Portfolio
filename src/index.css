@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media screen and (max-width: 768px) {
+  .pagination .page-previous,
+  .pagination .page-next {
+    padding: 8px;
+    margin-right: 3px;
+  }
+
+ 
+}

@@ -12,7 +12,7 @@ function Training() {
       <p className="text-center text-2xl md:text-3xl lg:text-4xl xl:text-6xl mb-10 text-orange-600 font-bold">
         Trainings
       </p>
-      <div className="flex justify-center gap-10 md:gap-32 ">
+      <div className="flex justify-center gap-5 md:gap-32 sm:gap-8 ">
         <Slider />
       </div>
     </div>

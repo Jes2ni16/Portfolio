@@ -38,7 +38,7 @@ const Slider = () => {
     >
       {trainings.map((item, index) => (
         <SwiperSlide
-          className="flex justify-center transition-transform transform hover:-translate-y-5 p-5"
+          className="slider flex justify-center transition-transform transform hover:-translate-y-5 p-0"
           key={index}
         >
           <div
@@ -56,7 +56,7 @@ const Slider = () => {
               <img
                 src={item.image}
                 alt=""
-                className="w-36 sm:w-40 md:w-48 lg:w-64 xl:w-80 h-16 sm:h-20 md:h-32 lg:h-48 xl:h-60 image-fluid"
+                className="min-w-36 min-h-20 sm:w-40 md:w-48 lg:w-64 xl:w-80 h-16 sm:h-20 md:h-32 lg:h-48 xl:h-60 image-fluid "
               />
               <p className="md:text-xl lg:text-2xl xl:text-3xl mb-5 font-bold text-orange-600">
                 {item.title}

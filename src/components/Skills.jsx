@@ -55,7 +55,7 @@ function Skills() {
                   alt={skill.alt}
                   className="w-16 sm:w-20 md:w-24 lg:w-32 xl:w-40 h-10 sm:h-16 md:h-20 lg:h-28 xl:h-32  image-fluid"
                 />
-                <p className="text-xl text-center">
+                <p className="text-sm md:text-xl lg:text-2xl xl:text-3xl mb-5 text-center">
                   <strong>{skill.name} </strong>
                 </p>
               </div>
@@ -77,7 +77,7 @@ function Skills() {
                 alt={skill.alt}
                 className="w-16 sm:w-20 md:w-24 lg:w-32 xl:w-40 h-10 sm:h-16 md:h-20 lg:h-28 xl:h-32  image-fluid"
               />
-              <p className=" text-xl text-center">
+              <p className="text-xs md:text-xl lg:text-2xl xl:text-3xl mb-5 text-center">
                 {" "}
                 <strong>{skill.name} </strong>{" "}
               </p>
